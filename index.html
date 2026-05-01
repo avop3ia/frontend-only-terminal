@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>avop3ia</title>
+		<link rel="icon" href="icon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- OTZiNjR7cmFuZH0= -->
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+		<style>
+			* {
+				font-family: 'Fira Code', monospace;
+				font-weight: 400;
+				font-size: 20px;
+				color: #ffffff;
+				cursor: default;
+			}
+
+			body {
+				background-color: #23252E;
+			}
+
+			.margin-bottom10px {
+				margin-bottom: 10px;
+			}
+
+			.titlebar {
+				background-color: #23252E;
+				border-bottom: 4px solid #1F2028;
+				padding: 6px 12px;
+				display: flex;
+				align-items: center;
+				position: relative;
+			}
+
+			.titlebar-icon {
+				position: absolute;
+				left: 6px;
+			}
+
+			.titlebar-titletext {
+				font-size: 24px;
+				color: #ffffff;
+				width: 100%;
+				text-align: center;
+			}
+
+			.highlightHide{
+				color: #23252E;
+			}
+
+			#output div {
+				color: #ffffff;
+				word-break: break-all;
+			}
+
+			.input-line {
+				display: flex;
+			}
+
+			.prompt, .prompt-js {
+				font-weight: 700;
+				color: #277fff;
+                user-select: none;
+			}
+
+			#commandInput {
+				background: none;
+				border: none;
+				outline: none;
+				color: white;
+				caret-shape: block;
+				caret-color: #ffffff;
+				width: 100%;
+				margin-left: 10px;
+				user-select: text;
+			}
+
+			::selection, #commandInput::selection {
+				background-color: #E6E6E6;
+				color: #23252E;
+			}
+
+			.highlightHide::selection{
+				background-color: #23252E;
+				color: #E6E6E6;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="titlebar">
+			<span class="titlebar-icon">
+				<svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="0.5" y="0.5" width="23" height="23" rx="4" fill="#292929" stroke="#ffffff" stroke-width="1"/>
+					<polyline points="5,5 9,8 5,11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<line x1="10" y1="11" x2="16" y2="11" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+				</svg>
+			</span>
+			<span class="titlebar-titletext">avop3ia.github.io</span>
+		</div>
+		<div class="margin-bottom10px"></div>
+		A web-based shell interface built using only HTML, CSS, and JavaScript. <!-- MTc5MmI2NHtyYW5kfQ== -->
+		<div class="highlightHide">You found me! I can only be concealed for so long. What is Cryptography?</div>
+		Type 'ls' to list the available commands.
+		<div class="margin-bottom10px"></div>
+		<div id="output"></div>
+		<div class="input-line">
+			<span class="prompt">$</span>
+			<input type="text" id="commandInput" autocomplete="off" autofocus />
+		</div> <!-- NjAwMzJiNjR7cmFuZH0= -->
+		<script>
+			const _0x5950b6=_0x41e7;(function(_0x380611,_0x290cb6){const _0x467cab=_0x41e7,_0x3348af=_0x380611();while(!![]){try{const _0x9945e4=parseInt(_0x467cab(0x179))/0x1*(parseInt(_0x467cab(0x154))/0x2)+parseInt(_0x467cab(0x167))/0x3+parseInt(_0x467cab(0x161))/0x4*(-parseInt(_0x467cab(0x16e))/0x5)+parseInt(_0x467cab(0x15f))/0x6*(-parseInt(_0x467cab(0x172))/0x7)+parseInt(_0x467cab(0x166))/0x8*(parseInt(_0x467cab(0x148))/0x9)+parseInt(_0x467cab(0x14d))/0xa*(-parseInt(_0x467cab(0x137))/0xb)+-parseInt(_0x467cab(0x16a))/0xc*(parseInt(_0x467cab(0x14a))/0xd);if(_0x9945e4===_0x290cb6)break;else _0x3348af['push'](_0x3348af['shift']());}catch(_0x1f757e){_0x3348af['push'](_0x3348af['shift']());}}}(_0x33e4,0x50964));const input=document['getElementById'](_0x5950b6(0x13c)),output=document[_0x5950b6(0x16c)](_0x5950b6(0x15a));function _0x41e7(_0x300e9f,_0x5538e6){_0x300e9f=_0x300e9f-0x136;const _0x33e4ad=_0x33e4();let _0x41e755=_0x33e4ad[_0x300e9f];return _0x41e755;}input[_0x5950b6(0x13b)][_0x5950b6(0x16b)]='false',input[_0x5950b6(0x171)](_0x5950b6(0x150),function(_0x5713ae){const _0x9de919=_0x5950b6;if(input['dataset']['locked']==='true'){console[_0x9de919(0x168)](input[_0x9de919(0x13b)][_0x9de919(0x16b)]),_0x5713ae[_0x9de919(0x173)]();return;}if(_0x5713ae[_0x9de919(0x146)]===_0x9de919(0x141)){const _0x1cbe35=input[_0x9de919(0x142)][_0x9de919(0x155)]();printEchoLine(_0x1cbe35),executeCommand(_0x1cbe35),input[_0x9de919(0x142)]='',window[_0x9de919(0x14c)](0x0,document[_0x9de919(0x15b)][_0x9de919(0x156)]);}});function printEchoLine(_0x490e12){const _0x5185b6=_0x5950b6,_0x248db9=document['createElement'](_0x5185b6(0x165)),_0x248abd=document['createElement'](_0x5185b6(0x140));_0x248abd[_0x5185b6(0x136)]=_0x5185b6(0x138),_0x248abd[_0x5185b6(0x151)]='$\x20';const _0x1e3dea=document[_0x5185b6(0x177)](_0x5185b6(0x140));_0x1e3dea['textContent']=_0x490e12,_0x248db9[_0x5185b6(0x178)](_0x248abd),_0x248db9[_0x5185b6(0x178)](_0x1e3dea),output[_0x5185b6(0x178)](_0x248db9);}function _0x33e4(){const _0x217356=['.prompt','className','5379TDtlXi','prompt-js','avop3ia','clear','dataset','commandInput','hidden','flag\x20format:\x20flag{a_fl4g_3X4mpl3}',':\x20unsupported\x20command','span','Enter','value','tags',':\x20permission\x20denied','1792b64{rand}','key','getRandomValues','108FSonFl','test','13dKsDKC','uname','scrollTo','6620itKIQK','60032b64{rand}','96b64{rand}','keydown','textContent','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=','div,\x20span,\x20svg,\x20rect,\x20polyline,\x20line,\x20br,\x20input,\x20script','437336veyNim','trim','scrollHeight','HTML\x20tags\x20used:\x20html,\x20head,\x20meta,\x20title,\x20link,\x20style,\x20body,','2026-05-02T00:13:21Z','Linux','output','body','innerHTML','A\x20flag\x20is\x20hidden\x20somewhere..','focus','12abudAx','For\x20context,\x20look\x20up\x20“ctf“\x20on\x20google','196OFMVWu','startuptime','commands:\x20clear,\x20ctf,\x20hostname,\x20ls,\x20startuptime,\x20tags,\x20uname,\x20whoami','style','div','364976hqdWig','920853IkxCuI','log','ctf','7031496kmZCms','locked','getElementById','true','2015WaFcZV','false','visibility','addEventListener','112854WlKyCv','preventDefault','1\x20usage:\x20uname\x20-a,\x20--all\x20\u00a0\x20print\x20all\x20information','querySelector','Linux\x20kali\x206.0.0-kali3-amd64\x20#1\x20SMP\x20PREEMPT_DYNAMIC\x20Debian\x206.0.7-1kali1\x20(2022-11-07)\x20x86_64\x20GNU/Linux','createElement','appendChild','2mylqXd'];_0x33e4=function(){return _0x217356;};return _0x33e4();}function printLine(_0x5cdcfb){const _0x4cb145=_0x5950b6,_0x52625a=document[_0x4cb145(0x177)](_0x4cb145(0x165));_0x52625a[_0x4cb145(0x151)]=_0x5cdcfb,output[_0x4cb145(0x178)](_0x52625a),window[_0x4cb145(0x14c)](0x0,document[_0x4cb145(0x15b)][_0x4cb145(0x156)]);}function executeCommand(_0x466103){const _0xc7ddb0=_0x5950b6;if(/^(cd|pwd|cp|mv|rm|mkdir|touch|sudo|chmod|chown|ping|curl|wget|ssh|ip a|apropos|type|tree|env|printenv|id|which)$/[_0xc7ddb0(0x149)](_0x466103)){printLine(_0x466103+_0xc7ddb0(0x144));return;}if(/^(whoami|hostname)$/['test'](_0x466103)){printLine('kali');return;}if(/^(uname -a|uname --all)$/['test'](_0x466103)){printLine(_0xc7ddb0(0x176));return;}switch(_0x466103){case _0xc7ddb0(0x14e):const _0x378793='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=',_0x1f9b3d=new Uint8Array(0xea80);crypto[_0xc7ddb0(0x147)](_0x1f9b3d);let _0xbe414d='';for(let _0x191b10=0x0;_0x191b10<0xea7f;_0x191b10++)_0xbe414d+=_0x378793[_0x1f9b3d[_0x191b10]%0x40];_0xbe414d+='=',printLine(_0xbe414d);break;case _0xc7ddb0(0x145):const _0x1e18a1=_0xc7ddb0(0x152),_0x3871df=new Uint8Array(0x700);crypto[_0xc7ddb0(0x147)](_0x3871df);let _0x42c2fd='';for(let _0xc7ca37=0x0;_0xc7ca37<0x6ff;_0xc7ca37++)_0x42c2fd+=_0x1e18a1[_0x3871df[_0xc7ca37]%0x40];_0x42c2fd+='=',printLine(_0x42c2fd);break;case _0xc7ddb0(0x14f):const _0x1ca3f2=_0xc7ddb0(0x152),_0x87e27a=new Uint8Array(0x60);crypto[_0xc7ddb0(0x147)](_0x87e27a);let _0x3124d2='';for(let _0xc2955e=0x0;_0xc2955e<0x5f;_0xc2955e++)_0x3124d2+=_0x1ca3f2[_0x87e27a[_0xc2955e]%0x40];_0x3124d2+='=',printLine(_0x3124d2);break;case _0xc7ddb0(0x139):input[_0xc7ddb0(0x13b)][_0xc7ddb0(0x16b)]=_0xc7ddb0(0x16d),document[_0xc7ddb0(0x175)](_0xc7ddb0(0x17a))[_0xc7ddb0(0x164)]['visibility']=_0xc7ddb0(0x13d);const _0x1ee8eb=document[_0xc7ddb0(0x177)](_0xc7ddb0(0x165));output[_0xc7ddb0(0x178)](_0x1ee8eb),setTimeout(()=>{const _0x56b3fe=_0xc7ddb0;_0x1ee8eb['remove'](),printLine('\u00a0'),document[_0x56b3fe(0x175)]('.prompt')[_0x56b3fe(0x164)][_0x56b3fe(0x170)]='visible',input['dataset'][_0x56b3fe(0x16b)]=_0x56b3fe(0x16f),input[_0x56b3fe(0x15e)]();},0x9c4);break;case'ls':printLine(_0xc7ddb0(0x163));break;case _0xc7ddb0(0x162):printLine(_0xc7ddb0(0x158));break;case _0xc7ddb0(0x14b):printLine(_0xc7ddb0(0x174)),printLine(_0xc7ddb0(0x159));break;case _0xc7ddb0(0x169):printLine(_0xc7ddb0(0x15d)),printLine(_0xc7ddb0(0x13e)),printLine('\u00a0'),printLine(_0xc7ddb0(0x160));break;case _0xc7ddb0(0x143):printLine(_0xc7ddb0(0x157)),printLine(_0xc7ddb0(0x153));break;case _0xc7ddb0(0x13a):output[_0xc7ddb0(0x15c)]='';break;case'':printLine('');break;default:printLine(_0x466103+_0xc7ddb0(0x13f));}}
+		</script>
+	</body>
+	<!-- You are one step closer to the flag!
+
+	Gur arkg fgrc vf gb
+	wait a second.. I can't read these properly. Let me *rotate it 13 times.*
+	Okay.. the rest is up to you
+
+	The next step is to lbh ner bar fgrc njnl sebz gur synt abj gb rnea vg qrpbqr gurfr punenpgref va onfr 32 MZWGCZ33MMYG4OLSGR2DKXZXGB2V62BUKYZV6YZQNVYDCM3UGNSF65DIGNPWG5DGPU====== -->
+</html>
